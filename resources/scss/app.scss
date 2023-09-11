@@ -1,0 +1,10 @@
+@use './partials/main' as *;
+@import "~bootstrap/scss/bootstrap";
+ul > li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    color: red;
+}

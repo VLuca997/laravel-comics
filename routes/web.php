@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/layouts/layout');
+    $comics = config('comics');//rendiamo questa variabile piena del nostro array associativo
+    $data = compact('comics');
+    return view('/layouts/layout', $data);
 });
